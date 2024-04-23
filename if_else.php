@@ -9,10 +9,11 @@
 
 <body>
 <?php
-$members = array("Peter" =>"35", "Ben" => "37","Joe" => "50");
-foreach ($members as $x => $y) {
-    echo "$x has $y year old;";
-}  
+declare(strict_types=1);
+function addNumbers(float $a, float $b):int {
+    return (int) ($a + $b);
+}
+echo addNumbers(5, 3.14);
 ?> 
 </body>
 
