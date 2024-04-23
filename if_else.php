@@ -8,20 +8,17 @@
 </head>
 
 <body>
-    <?php
-    $x = 0;
-    while ($x <= 100) {
-        if ($x == 50) {
-            $x += 10;
-            continue;
-        }
-        if ($x == 85) {
-            break;
-        }
-        echo "the number that you are looking for is: $x <br>";
-        $x += 10;
+<?php
+$T = ['A', 'K', 'M', 'L' ];
+foreach ($T as $value) {
+    echo $value. '<br>';
+    if ($value == 'M') {
+        echo 'M is found';
+        break;
+    
     }
-    ?>
+}
+?>
 </body>
 
 </html>
