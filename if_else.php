@@ -9,16 +9,11 @@
 
 <body>
 <?php
-$T = ['A', 'K', 'M', 'L' ];
-foreach ($T as $value) {
-    echo $value. '<br>';
-    if ($value == 'M') {
-        echo 'M is found';
-        break;
-    
-    }
-}
-?>
+$members = array("Peter" =>"35", "Ben" => "37","Joe" => "50");
+foreach ($members as $x => $y) {
+    echo "$x has $y year old;";
+}  
+?> 
 </body>
 
 </html>
