@@ -18,7 +18,7 @@
         if ($x == 85) {
             break;
         }
-        echo "the number is: $x <br>";
+        echo "the number that you are looking for is: $x <br>";
         $x += 10;
     }
     ?>
