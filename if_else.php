@@ -9,12 +9,26 @@
 
 <body>
 <?php
-declare(strict_types=1);
-function addNumbers(float $a, float $b):int {
-    return (int) ($a + $b);
-}
-echo addNumbers(5, 3.14);
-?> 
-</body>
 
-</html>
+$inventory = array(
+    "printer" => array(
+      "stock" => 10,
+      "sold" => 15,
+    ),
+    "screens" => array(
+      "stock" => 20,
+      "sold" => 5,
+    ),
+    "keyboard" => array(
+      "stock" => 25,
+      "sold" => 10,
+    ),
+  );
+
+foreach ($inventory as $item => $details) {
+    $stock = $details['stock'];
+    $sold = $details['sold'];
+    echo "$item: Stock: $stock, Sold: $sold <br>";
+}
+  
+?>
