@@ -8,12 +8,17 @@
 </head>
 
 <body>
-    <?php
-    $something = 11;
-    if ($something > 10) {
-        echo "The variable is greater than 10";
-    } else {
-        echo "the variable is less than 10";
+    <?php 
+    $i = 0;
+    while ($i< 6) {
+        $i++;
+        if ($i==3) {
+            continue;
+        }
+        if ($i=5) {
+            break;
+        }
+        echo $i. '<br>';
     }
     ?>
 </body>
